@@ -1,0 +1,6 @@
+# Configurazione Supabase CLI (usata solo se deployi via CLI).
+# Per la chiamata server-to-server del Database Webhook, la function NON deve
+# richiedere un JWT utente: la proteggiamo invece con WEBHOOK_SECRET.
+
+[functions.send-booking-confirmation]
+verify_jwt = false
